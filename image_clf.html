@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Kick-Smart - IC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/favicon.ico">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+
+
+					<h1 id="logo"><a href="index.html">
+						<img src="images/favicon.ico" alt=""><span style="font-weight:bold">  <b>Kick-Smart</b></span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Projects</a>
+								<ul>
+									<li><a href="image_clf.html">Image Classification</a></li>
+									<li><a href="sentiment.html">News Sentiment Analysis</a></li>
+									<li><a href="webcam_sentiment.html">WebCam Sentiment analysis</a></li>
+									<li><a href="selfdriven_drone.html">Self-Driving Drone</a></li>
+									<li>
+										<a href="trading.html">Trading</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="about.html">About us</a></li>
+							<li><a href="mailto:maldonadoraulqro@gmail.com" class="button special">Get in touch</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Image Classification</h2>
+						</header>
+						<div class="row 150%">
+							<div class="4u 12u$(medium)">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3>The CIFAR-10 dataset</h3>
+											<p>The CIFAR-10 dataset consists of 60000 32x32 color images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.
+
+The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class. </p>
+											<span class="image"><img src="images/cifar.png" alt="" align="middle" /></span>
+
+											<footer>
+												<ul class="actions">
+													<li><a href="https://www.cs.toronto.edu/~kriz/cifar.html" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+
+									</section>
+
+							</div>
+							<div class="8u$ 12u$(medium) important(medium)">
+
+								<!-- Content -->
+									<section id="content">
+										<a href="#" class="image fit"><img src="images/class.png" alt="" /></a>
+										<h3>About the project</h3>
+										<p>In this project, we classify images from the <b>CIFAR-10 dataset</b>. The dataset consists of airplanes, dogs, cats, and other objects. Here, we preprocessed the data, then train a convolutional neural network on all the samples. We normalize the images, one-hot encode the labels, build a convolutional layer, max pool layer, and fully connected layer. At then end, we inspect their predictions on the sample images.</p>
+										<h3>How does it work?</h3>
+										<p>With a completely trained model, the user needs only to submit an image. This image shall undergo the preprocessing stages and then, the model will make a prediction as to which category does the object in the image fits in.<br></p>
+										 <p style="text-align:center;"><img src="images/pred.png" alt="Smiley face" align="middle"> </p> 
+
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/maldonadoraulqro" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/margalordyzd" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:maldonadoraulqro@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://medium.com/@sergiosantoyo.92" class="icon alt fa-medium"><span class="label">medium</span></a></li>
+						<li><p>maldonadoraulqro@gmail.com</p></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Kick-Smart. All rights reserved.</li>
+					</ul>
+				</footer>
+
+		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
