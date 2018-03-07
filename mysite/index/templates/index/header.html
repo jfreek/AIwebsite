@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Kick-Smart</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% load staticfiles %}
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{% static 'index/css/main.css' %}" />
+		<link rel="icon" href="{% static 'index/images/favicon.ico' %}">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<!-- Header -->
+	<header id="header">
+		<h1 id="logo"><a href="/index/">
+			<img src="{% static 'index/images/favicon.ico' %}" alt=""><span style="font-weight:bold">  <b>Kick-Smart</b></span></a></h1>
+		<nav id="nav">
+			<ul>
+				<li><a href="/index/">Home</a></li>
+				<li>
+					<a href="#">Projects</a>
+					<ul>
+						<li><a href="/sentiment/">Sentiment Analysis</a></li>
+						<li><a href="/expression/">Facial Expression Recognition</a></li>
+					</ul>
+				</li>
+				<li><a href="/about/">About us</a></li>
+				<li><a href="mailto:jorgee.abud@gmail.com" class="button special">Get in touch</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<body class="landing">
+		<div id="page-wrapper">
+			{% block content %}
+
+			{% endblock %}
+
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/jorge-espinoza-abud/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/jfreek" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:jorgee.abud@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://medium.com/@jorgee.abud" class="icon alt fa-medium"><span class="label">medium</span></a></li>
+					<li><p>contact@kick-smart.com</p></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Kick-Smart. All rights reserved.</li>
+				</ul>
+			</footer>
+		</div>
+				<!-- Scripts -->
+		<script src="{% static 'index/js/jquery.min.js'%}"></script>
+		<script src="{% static 'index/js/jquery.scrolly.min.js'%}"></script>
+		<script src="{% static 'index/js/jquery.dropotron.min.js'%}"></script>
+		<script src="{% static 'index/js/jquery.scrollex.min.js'%}"></script>
+		<script src="{% static 'index/js/skel.min.js'%}"></script>
+		<script src="{% static 'index/js/util.js'%}"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="{% static 'index/js/main.js'%}"></script>
+	</body>
+</html>
